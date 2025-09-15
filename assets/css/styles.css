@@ -1,0 +1,87 @@
+:root {
+  --blue: #3a6073;
+  --silver: #b7c5d3;
+  --light: #eef3f7;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, var(--light), var(--silver));
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+h1 {
+  color: var(--blue);
+}
+
+button {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  background: var(--blue);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: var(--silver);
+  color: #000;
+}
+
+.role-select {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.profile, .activities, .progress, .dashboard, .lessons {
+  padding: 1rem 2rem;
+}
+
+.activity {
+  margin-bottom: 1.5rem;
+  background: rgba(255,255,255,0.8);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: var(--silver);
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0;
+  background: var(--blue);
+  transition: width 0.5s;
+}
+
+#progressTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#progressTable th, #progressTable td {
+  border: 1px solid var(--silver);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+#progressTable th {
+  background: var(--blue);
+  color: #fff;
+}
