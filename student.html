@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LectuX - Estudiante</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/student.js"></script>
+</head>
+<body class="student">
+  <header>
+    <h1>Perfil del Estudiante</h1>
+  </header>
+  <section class="profile">
+    <label>Correo Gmail:
+      <input type="email" id="email" placeholder="correo@example.com" />
+    </label>
+    <label>Avatar:
+      <input type="file" id="avatar" accept="image/*" />
+    </label>
+    <label>Idioma:
+      <select id="language">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+    </label>
+  </section>
+
+  <section class="activities">
+    <h2>Actividades</h2>
+    <div class="activity" id="reading">
+      <h3>Lectura</h3>
+      <p id="readingText">La lectura es divertida y educativa.</p>
+      <button id="startReading">Grabar Lectura</button>
+      <p id="readingResult"></p>
+    </div>
+    <div class="activity" id="writing">
+      <h3>Escritura</h3>
+      <textarea id="writingInput" placeholder="Escribe aquí..."></textarea>
+      <p id="writingFeedback"></p>
+    </div>
+    <div class="activity" id="bookGen">
+      <h3>Generador de Libros con IA</h3>
+      <input type="text" id="bookTheme" placeholder="Tema" />
+      <input type="text" id="bookCharacters" placeholder="Personajes" />
+      <button id="generateBook">Generar</button>
+      <pre id="bookOutput"></pre>
+    </div>
+  </section>
+
+  <section class="lessons">
+    <h2>Lecciones</h2>
+    <ul>
+      <li>Clases de textos: Descripción, Argumentativo, Narrativo, Instructivo</li>
+      <li>Mitos y leyendas</li>
+      <li>Creación y redacción de textos</li>
+      <li>Categorías gramaticales y accidentes del verbo</li>
+      <li>Géneros literarios y convenciones de mapas</li>
+      <li>Caligrama y clases de la poesía: dramática, lírica, coral, bucólica, vanguardista</li>
+      <li>El adverbio y reglas de acentuación (diptongo, triptongo, hiato)</li>
+      <li>Artículos periodísticos</li>
+      <li>Comprensión y producción de textos</li>
+    </ul>
+  </section>
+
+  <section class="progress">
+    <h2>Progreso</h2>
+    <div class="progress-bar"><div id="progressFill"></div></div>
+    <p id="points">Puntos: 0</p>
+  </section>
+</body>
+</html>

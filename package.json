@@ -1,0 +1,8 @@
+{
+  "name": "lectux",
+  "version": "0.1.0",
+  "description": "App web para fortalecer la lectoescritura en grado 5",
+  "scripts": {
+    "test": "echo 'No tests specified'"
+  }
+}
